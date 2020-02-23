@@ -1,0 +1,173 @@
+/* video.js样式修改 */
+
+.video-js {
+	/* 给.video-js设置字体大小以统一各浏览器样式表现，因为video.js采用的是em单位 */
+	font-size: 14px;
+}
+
+
+/*video标签的背景色*/
+
+.video-js .vjs-tech {
+	background: #859d7d;
+}
+
+.video-js button {
+	outline: none;
+	color: #e4c6d0;
+}
+
+.video-js.vjs-fluid,
+.video-js.vjs-16-9,
+.video-js.vjs-4-3 {
+	/* 视频占满容器高度 */
+	height: 100%;
+	background-color: #161616;
+}
+
+.vjs-poster {
+	background-color: #161616;
+}
+
+.video-js .vjs-big-play-button {
+	/* 中间大的播放按钮 */
+	font-size: 2.7em;
+	line-height: 1.5em;
+	height: 1.5em;
+	width: 1.5em;
+	-webkit-border-radius: 2.2em;
+	-moz-border-radius: 2.2em;
+	border-radius: 2.2em;
+	background-color: rgba(0, 0, 0, .3);
+	border-width: 0;
+	margin-top: -1em;
+	margin-left: -0.9em;
+}
+
+.video-js.vjs-paused .vjs-big-play-button {
+	/* 视频暂停时显示播放按钮 */
+	display: block;
+}
+
+.video-js.vjs-error .vjs-big-play-button {
+	/* 视频加载出错时隐藏播放按钮 */
+	display: none;
+}
+
+.vjs-loading-spinner {
+	/* 加载圆圈 */
+	font-size: 2em;
+	width: 2em;
+	height: 2em;
+	border-radius: 1em;
+	margin-top: -1em;
+	margin-left: -1.5em;
+}
+
+.video-js .vjs-control-bar {
+	/* 控制条默认显示 */
+	display: flex;
+}
+
+.video-js .vjs-time-control {
+	display: block;
+}
+
+.video-js .vjs-remaining-time {
+	display: none;
+}
+
+.vjs-button>.vjs-icon-placeholder:before {
+	/* 控制条所有图标，图标字体大小最好使用px单位，如果使用em，各浏览器表现可能会不大一样 */
+	font-size: 22px;
+	line-height: 1.9;
+}
+
+.video-js .vjs-playback-rate .vjs-playback-rate-value {
+	line-height: 2.4;
+	font-size: 18px;
+}
+
+
+/* 进度条背景色 */
+
+.video-js .vjs-play-progress {
+	color: #e4c6d0;
+	background-color: #e4c6d0;
+}
+
+
+/*dc0b21*/
+
+.video-js .vjs-progress-control .vjs-mouse-display {
+	background-color: #e4c6d0;
+}
+
+.vjs-mouse-display .vjs-time-tooltip {
+	padding-bottom: 6px;
+	background-color: #e4c6d0;
+}
+
+.video-js .vjs-play-progress .vjs-time-tooltip {
+	display: none !important;
+}
+
+
+/* 控制台背景色 */
+
+.video-js .vjs-control-bar {
+	background-color: #859d7d;
+}
+
+
+/*----------------------------------这里是自定义css-------------------------------------------*/
+
+.vs-width {
+	margin: 0px auto;
+	width: 768px;
+	height: 576px;
+}
+
+.theTvSeries{
+	
+}
+.SeriesBox {
+	width: 120px;
+	height: 68px;
+	padding: 0;
+}
+
+.SeriesBox:hover {
+	border: none;
+}
+
+.SeriesBox img {
+	width: 100%;
+	height: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+	display: block;
+	outline: hidden;
+}
+
+.SeriesBox img:hover{
+	outline: hidden;
+}
+
+.SeriesBoxP1{
+	color: dimgrey;
+	font-size: 14px;
+    line-height: 24px;
+}
+
+ .SeriesBoxP2{
+	color: #999;
+	font-size: 12px;
+    line-height: 24px;
+}
+#theTvSeries{
+	margin-top: 60px;
+}
+#theTvSeries a:hover{
+	text-decoration: none;
+}
